@@ -518,7 +518,7 @@
 		
 		POPS_BUILDING_SLOTS						= 5 	# The amount of pops needed to unlock a new building slot
 		BASE_PLANET_BUILDING_SLOTS				= 1
-		MAX_PLANET_BUILDING_SLOTS				= 16
+		MAX_PLANET_BUILDING_SLOTS				= 36
 
 		POPS_BRANCH_OFFICE_BUILDING_SLOTS		 = 25 	# The amount of pops needed to unlock a new branch office building slot
 		BASE_PLANET_BRANCH_OFFICE_BUILDING_SLOTS = 0
@@ -763,10 +763,10 @@
 		POP_ETHOS_UPPER_ETHIC_THRESHOLD				= 2.0	# If the % of pops following an ethic is >= this relative to its attraction do not diverge to it
 		POP_MIN_ETHIC_RELATIVE_ATTRACTION			= 0.1	# If relative attraction is less than this, do not diverge to this ethic
 		POP_ETHOS_DIVERGENCE_INTERVAL				= 360	# Number of days until a Pop has a change to diverge from empire ethos
-		POP_ETHOS_DIVERGENCE_RATE_MULT				= 0.02	# Chance of a pop evaluating its ethics every year
-		POP_CHANGE_FACTION_CHANCE					= 0.02	# Once every month a pop has X chance to change faction but only if the pop wants to
+		POP_ETHOS_DIVERGENCE_RATE_MULT				= 1.00	# Chance of a pop evaluating its ethics every year
+		POP_CHANGE_FACTION_CHANCE					= 0.20	# Once every month a pop has X chance to change faction but only if the pop wants to
 		POP_CURRENT_FACTION_WEIGHT					= 1.25	# Weight for current faction is multiplied by this much for pops
-		POP_CURRENT_FACTION_LAST_MEMBER_WEIGHT		= 100.0	# Weight for current faction is multiplied by this much for pops when they are the last faction member
+		POP_CURRENT_FACTION_LAST_MEMBER_WEIGHT		= 0.10	# Weight for current faction is multiplied by this much for pops when they are the last faction member
 		POP_FACTION_APPROVAL_VERY_LOW				= 0.20	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_LOW					= 0.40	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_BASE					= 0.50	# Base faction approval
@@ -776,11 +776,11 @@
 		POP_FACTION_MIN_POTENTIAL_MEMBERS			= 5 # If a faction has less potential members than this, do not form
 		POP_FACTION_CREATION_COOLDOWN				= 180 # Wait this many days after creating a faction to create another one (not applied to hidden factions)
 
-		POLICY_YEARS						= 10 	# Years a set policy can not be changed for
-		SPECIES_POLICY_YEARS				= 10
+		POLICY_YEARS						= 1 	# Years a set policy can not be changed for
+		SPECIES_POLICY_YEARS				= 1
 
 		FEDERATION_LEADER_POWER_THRESHOLD	= 1.25	# Must have this much more power than current Federation leader to become new leader
-		FEDERATION_MIN_MEMBERS_TO_KICK		= 3	# Can't kick alliance members unless you have at least this many members
+		FEDERATION_MIN_MEMBERS_TO_KICK		= 13	# Can't kick alliance members unless you have at least this many members
 		
 		DEBRIS_BASE_COST					= 0	# Base cost of special project for analyzing debris
 		DEBRIS_ANALYZED_AREA_POINTS			= 5	# Points * Level given for each component analyzed
@@ -802,13 +802,13 @@
 		REVOLT_RISK_ALERT					= 0.5	# This is the threshold for the revolt risk alert
 
 		SURRENDER_MONTHS					= 6 	# For how many months should a war be active after a surrender
-		TRUCE_YEARS							= 10 	# Truce last for X years
+		TRUCE_YEARS							= 5 	# Truce last for X years
 
 		INSULT_COOLDOWN_DAYS				= 30 	# How often can you send insults?
 		AUTO_DECLINE_DIPLOMACY_DAYS			= 180	# Number of days after which diplomatic action will automatically be declined
 		
 		FEDERATION_FLEET_SIZE				= 0.2	# Federation fleet capacity is this % of all members' fleets
-		FEDERATION_MAX_FLEET_SIZE			= 500
+		FEDERATION_MAX_FLEET_SIZE			= 1500
 		
 		MIN_RIVAL_YEARS						= 10	# Years before you can remove an empire as a rival
 		
@@ -908,7 +908,7 @@
 		ANOMALY_SPAWN_CHANCE					= 0.050 # Percent chance that a planet gets a discovery when surveyed
 		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.005 # Percentage increase towards next chance when failing
 
-		GOVERNMENT_COOLDOWN_YEARS				= 20	# Cooldown years after changing government before you can change it again
+		GOVERNMENT_COOLDOWN_YEARS				= 2	# Cooldown years after changing government before you can change it again
 		GOVERNMENT_CHANGE_INFLUENCE_COST		= 250	# The Influence it costs to change government typ
 		
 		EMPIRE_SIZE_BASE						= 30	# No penalties at this empire size or below
@@ -944,7 +944,7 @@
 		KEYBOARD_DOUBLE_CLICK_TIME				= 0.5	# Seconds listening to control group double clicks.
 
 		MIN_TRADE_DEAL_LENGTH_YEARS				= 10	# Minimum length of a trade deal in years.
-		MAX_TRADE_DEAL_LENGTH_YEARS				= 30	# Maximum length of a trade deal in years.
+		MAX_TRADE_DEAL_LENGTH_YEARS				= 300	# Maximum length of a trade deal in years.
 
 		MISSION_PROGRESS_MAX					= 1	# When is a mission finished?
 		NEW_HEIR_CHANCE							= 0.05	# Chance to get a new heir each day. Range is 0 to 1
@@ -1235,7 +1235,7 @@
 		REQUIRED_POP_ASSEMBLY				= 100	# Required assembly to add a pop
 		
 		MAX_EMIGRATION_PUSH					= 100
-		MAX_GROWTH_FROM_IMMIGRATION			= 5	
+		MAX_GROWTH_FROM_IMMIGRATION			= 50	
 		MAX_GROWTH_PENALTY_FROM_EMIGRATION	= 0.95	# Fraction of base monthly growth
 		
 		DEFAULT_CHANGE_JOB_THRESHOLD		= 1.5		# A job must have this much higher weight in order for a pop to switch to it from their current job
