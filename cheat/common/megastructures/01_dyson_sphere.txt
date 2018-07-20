@@ -29,10 +29,10 @@ dyson_sphere_0 = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_dyson_sphere"
-			from = { NOT = { has_country_flag = built_dyson_sphere } }
-		}		
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_dyson_sphere"
+		#	from = { NOT = { has_country_flag = built_dyson_sphere } }
+		#}		
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -62,30 +62,30 @@ dyson_sphere_0 = {
 				is_star_class = sc_pulsar
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_binary_trinary"
-			NOR = {
-				is_star_class = sc_binary_1
-				is_star_class = sc_binary_2
-				is_star_class = sc_binary_3
-				is_star_class = sc_binary_4
-				is_star_class = sc_binary_5
-				is_star_class = sc_binary_6
-				is_star_class = sc_binary_7
-				is_star_class = sc_binary_8
-				is_star_class = sc_binary_9
-				is_star_class = sc_binary_10
-				is_star_class = sc_trinary_1
-				is_star_class = sc_trinary_2
-				is_star_class = sc_trinary_3
-				is_star_class = sc_trinary_4
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#NOT = { has_any_megastructure = yes }
-			has_no_non_gate_megastructure = yes
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_binary_trinary"
+		#	NOR = {
+		#		is_star_class = sc_binary_1
+		#		is_star_class = sc_binary_2
+		#		is_star_class = sc_binary_3
+		#		is_star_class = sc_binary_4
+		#		is_star_class = sc_binary_5
+		#		is_star_class = sc_binary_6
+		#		is_star_class = sc_binary_7
+		#		is_star_class = sc_binary_8
+		#		is_star_class = sc_binary_9
+		#		is_star_class = sc_binary_10
+		#		is_star_class = sc_trinary_1
+		#		is_star_class = sc_trinary_2
+		#		is_star_class = sc_trinary_3
+		#		is_star_class = sc_trinary_4
+		#	}
+		#}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_megastructure"
+		#	#NOT = { has_any_megastructure = yes }
+		#	has_no_non_gate_megastructure = yes
+		#}
 	}
 	
 	placement_rules = {

@@ -49,10 +49,10 @@ ring_world_1 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_black_hole"
-			NOT = { is_star_class = sc_black_hole }
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_black_hole"
+		#	NOT = { is_star_class = sc_black_hole }
+		#}
 		custom_tooltip = {
 			fail_text = "requires_no_binary_trinary"
 			NOR = {
@@ -73,11 +73,11 @@ ring_world_1 = {
 			}
 		}
 
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#NOT = { has_any_megastructure = yes }
-			has_no_non_gate_megastructure = yes
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_megastructure"
+		#	#NOT = { has_any_megastructure = yes }
+		#	has_no_non_gate_megastructure = yes
+		#}
 	}
 	
 	placement_rules = {

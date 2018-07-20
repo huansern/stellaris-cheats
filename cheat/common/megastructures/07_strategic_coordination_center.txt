@@ -40,28 +40,28 @@ strategic_coordination_center_0 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			#will be changed to type-specific string with next translation pass
-			#fail_text = "requires_no_existing_strategic_coordination_center"
-			from = {
-				NOT = {
-					any_owned_megastructure = {
-						OR = {
-							is_megastructure_type = strategic_coordination_center_0
-							is_megastructure_type = strategic_coordination_center_1
-							is_megastructure_type = strategic_coordination_center_2
-							is_megastructure_type = strategic_coordination_center_3
-							#is_megastructure_type = strategic_coordination_center_restored
-						}
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_megastructure"
+		#	#will be changed to type-specific string with next translation pass
+		#	#fail_text = "requires_no_existing_strategic_coordination_center"
+		#	from = {
+		#		NOT = {
+		#			any_owned_megastructure = {
+		#				OR = {
+		#					is_megastructure_type = strategic_coordination_center_0
+		#					is_megastructure_type = strategic_coordination_center_1
+		#					is_megastructure_type = strategic_coordination_center_2
+		#					is_megastructure_type = strategic_coordination_center_3
+		#					#is_megastructure_type = strategic_coordination_center_restored
+		#				}
+		#			}
+		#		}
+		#	}
+		#}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_megastructure"
+		#	has_no_non_gate_megastructure = yes
+		#}
 	}
 	
 	placement_rules = {

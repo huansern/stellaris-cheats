@@ -78,25 +78,25 @@ spy_orb_0 = {
 				is_star = yes
 			}
 
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				solar_system = {
-					has_no_non_gate_megastructure = yes
-					NOR = {
-						#has_any_megastructure = yes
-						any_planet = {
-							OR = {
-								is_planet_class = pc_ringworld_habitable
-								is_planet_class = pc_ringworld_habitable_damaged
-								is_planet_class = pc_ringworld_tech
-								is_planet_class = pc_ringworld_tech_damaged
-								is_planet_class = pc_ringworld_seam
-								is_planet_class = pc_ringworld_seam_damaged
-							}
-						}
-					}
-				}
-			}
+			#custom_tooltip = {
+			#	fail_text = "requires_no_existing_megastructure"
+			#	solar_system = {
+			#		has_no_non_gate_megastructure = yes
+			#		NOR = {
+			#			#has_any_megastructure = yes
+			#			any_planet = {
+			#				OR = {
+			#					is_planet_class = pc_ringworld_habitable
+			#					is_planet_class = pc_ringworld_habitable_damaged
+			#					is_planet_class = pc_ringworld_tech
+			#					is_planet_class = pc_ringworld_tech_damaged
+			#					is_planet_class = pc_ringworld_seam
+			#					is_planet_class = pc_ringworld_seam_damaged
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
 		} # use these for all non-star megastructures
 	}	
 

@@ -114,7 +114,7 @@ habitat_0 = {
 			orbit_location = yes
 			orbit_angle_offset = 45
 			orbit_distance_offset = 9.899
-			size = 6
+			size = 32
 			has_ring = no
 			
 			init_effect = {
