@@ -1,0 +1,16 @@
+namespace = inviciblefleet
+
+country_event = {
+   id = inviciblefleet.1
+   hide_window = yes
+
+   is_triggered_only = yes
+
+   immediate = {
+      add_modifier = {
+         modifier = "invicible_fleet"
+         days = -1
+      }
+      give_technology = { tech = tech_automated_exploration }
+   }
+}

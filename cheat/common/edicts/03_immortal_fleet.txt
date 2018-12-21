@@ -1,0 +1,20 @@
+immortal_fleet = {
+	length = 0
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+	
+	effect = {
+		hidden_effect = { 
+			country_event = { id = inviciblefleet.1 } 
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,11 @@
+﻿l_english:
+ ####################################
+ # Edicts
+ ####################################
+ edict_immortal_fleet:0 "Summon Immortal Fleet"
+ edict_immortal_fleet_desc:0 "Revolutionize every aspect of the empire, a giant leap forward. Gain massive boost. Rule them all."
+
+ ####################################
+ # Static Modifiers
+ ####################################
+ invicible_fleet:0 "Immortal Fleet"
