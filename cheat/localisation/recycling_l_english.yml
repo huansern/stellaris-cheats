@@ -1,0 +1,30 @@
+﻿l_english:
+ ####################################
+ # Jobs
+ ####################################
+
+ job_garbage_scavenger:0 "Garbage Scavenger"
+ job_garbage_scavenger_plural:0 "Garbage Scavengers"
+ job_garbage_scavenger_desc:1 "Collect garbage to recycle."
+ job_garbage_scavenger_effect_desc:0 "£job_garbage_scavenger£ $job_garbage_scavenger_plural$ produce §G+1§! £minerals£ §Y$minerals$§! from scavenged garbage. Ship the rest of the garbage to recycling facility."
+ mod_job_garbage_scavenger_add:0 "$job_garbage_scavenger$ Jobs"
+ mod_job_garbage_scavenger_per_pop:0 "§G+1§! $job_garbage_scavenger$ Job per $VALUE$ Pops"
+ mod_job_garbage_scavenger_per_pop_short:0 "\n§G+1§! £mod_job_garbage_scavenger_add£ per $VALUE$ £pop£"
+
+ job_garbage_recycler:0 "Garbage Recycler"
+ job_garbage_recycler_plural:0 "Garbage Recyclers"
+ job_garbage_recycler_desc:1 "Recycle garbage from garbage scavengers."
+ job_garbage_recycler_effect_desc:0 "£job_garbage_recycler£ $job_garbage_recycler_plural$ recycle garbage and produce §G+4§! £minerals£ §Y$minerals$§!. Consume §R-1§! £energy£ §Y$energy$§!."
+ mod_job_garbage_recycler_add:0 "$job_garbage_recycler$ Jobs"
+ mod_job_garbage_recycler_per_pop:0 "§G+1§! $job_garbage_recycler$ Job per $VALUE$ Pops"
+ mod_job_garbage_recycler_per_pop_short:0 "\n§G+1§! £mod_job_garbage_recycler_add£ per $VALUE$ £pop£"
+
+ ####################################
+ # Buildings
+ ####################################
+ 
+ building_recycling_center:0 "Recycling Center"
+ building_recycling_center_desc:0 "Recycle material instead of dispose it. Extract usable minerals."
+ 
+ building_recycling_plant:0 "Recycling plant"
+ building_recycling_plant_desc:0 "Recycle material instead of dispose it. Extract usable minerals. House more employees than recycling center."

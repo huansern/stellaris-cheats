@@ -1,0 +1,158 @@
+###################
+# Recycling Jobs
+###################
+garbage_scavenger = {
+	category = worker
+	is_capped_by_modifier = yes
+	building_icon = building_luxury_residence
+	clothes_texture_index = 2
+	icon = ratling_scavenger
+	
+	possible = {
+		hidden_trigger = { exists = owner }
+		complex_worker_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			minerals = 1
+		}
+	}
+	
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+			}		
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}	
+		modifier = {
+			factor = 2
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}		
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}		
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}		
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}	
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}			
+	}
+}
+
+garbage_recycler = {
+	category = worker
+	is_capped_by_modifier = yes
+	building_icon = building_resource_silo
+	clothes_texture_index = 2
+	icon = miner
+	
+	possible = {
+		hidden_trigger = { exists = owner }
+		worker_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			minerals = 4
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	weight = {
+		weight = @worker_job_weight
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_industrious
+				has_trait = trait_robot_power_drills
+			}		
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+		}	
+		modifier = {
+			factor = 2
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}	
+		modifier = {
+			factor = 10
+			OR = {	
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}		
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}		
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}		
+		modifier = {
+			factor = 1.2
+			has_trait = trait_very_strong
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_strong
+		}	
+		modifier = {
+			factor = 0.9
+			has_trait = trait_weak
+		}			
+	}
+}

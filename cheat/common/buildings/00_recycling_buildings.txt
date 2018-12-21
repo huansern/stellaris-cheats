@@ -1,0 +1,96 @@
+#############
+# Recycling buildings
+#############
+building_recycling_center = {
+	base_buildtime = 180
+	base_cap_amount = 1
+	icon = building_resource_silo
+
+	category = resource
+	
+	potential = {
+		NOT = { is_planet_class = pc_machine }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = resort_colony }
+	}
+	
+	country_modifier = {
+		country_resource_max_add = 2000
+	}
+	
+	planet_modifier = {
+		job_garbage_scavenger_add = 10
+		job_garbage_recycler_add = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	upgrades = {
+		building_recycling_plant
+	}
+	
+	triggered_desc = {
+		text = job_garbage_scavenger_effect_desc
+	}
+	
+	triggered_desc = {
+		text = job_garbage_recycler_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+building_recycling_plant = {
+	base_buildtime = 180
+	base_cap_amount = 1
+	icon = building_resource_silo
+
+	category = resource
+	
+	potential = {
+		NOT = { is_planet_class = pc_machine }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = resort_colony }
+	}
+	
+	country_modifier = {
+		country_resource_max_add = 2000
+	}
+	
+	planet_modifier = {
+		job_garbage_scavenger_add = 30
+		job_garbage_recycler_add = 3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	triggered_desc = {
+		text = job_garbage_scavenger_effect_desc
+	}
+	
+	triggered_desc = {
+		text = job_garbage_recycler_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
