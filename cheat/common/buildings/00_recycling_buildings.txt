@@ -4,7 +4,6 @@
 building_recycling_center = {
 	base_buildtime = 180
 	base_cap_amount = 1
-	icon = building_resource_silo
 
 	category = resource
 	
@@ -52,8 +51,9 @@ building_recycling_center = {
 
 building_recycling_plant = {
 	base_buildtime = 180
+	can_build = no
 	base_cap_amount = 1
-	icon = building_resource_silo
+	icon = building_recycling_center
 
 	category = resource
 	

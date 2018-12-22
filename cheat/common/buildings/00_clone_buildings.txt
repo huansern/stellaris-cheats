@@ -3,7 +3,6 @@
 #############
 building_cloning_lab = {
 	base_buildtime = 90
-	icon = building_organic_sanctuary
 
 	category = amenity
 	
@@ -40,7 +39,6 @@ building_cloning_lab = {
 
 building_slave_cloning_house = {
 	base_buildtime = 30
-	icon = building_crude_huts
 
 	category = amenity
 	

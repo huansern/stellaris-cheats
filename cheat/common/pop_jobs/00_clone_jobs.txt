@@ -4,7 +4,7 @@
 cloner = {
 	category = worker
 	is_capped_by_modifier = yes
-	building_icon = building_organic_sanctuary
+	building_icon = building_cloning_lab
 	clothes_texture_index = 1
 	icon = manager
 	
@@ -41,7 +41,7 @@ cloner = {
 slave_cloner = {
 	category = worker
 	is_capped_by_modifier = yes
-	building_icon = building_crude_huts
+	building_icon = building_slave_cloning_house
 	clothes_texture_index = 3
 	icon = primitive_laborer
 	

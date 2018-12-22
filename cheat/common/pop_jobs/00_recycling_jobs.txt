@@ -80,7 +80,7 @@ garbage_scavenger = {
 garbage_recycler = {
 	category = worker
 	is_capped_by_modifier = yes
-	building_icon = building_resource_silo
+	building_icon = building_recycling_center
 	clothes_texture_index = 2
 	icon = miner
 	
