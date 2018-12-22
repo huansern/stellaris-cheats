@@ -1,0 +1,26 @@
+#############
+# Solar Power Plant
+#############
+building_solar_power_processor = {
+	base_buildtime = 180
+
+	category = resource
+	
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		produces = {
+			energy = 4
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
