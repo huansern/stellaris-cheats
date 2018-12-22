@@ -1,0 +1,7 @@
+﻿l_english:
+ ####################################
+ # Buildings
+ ####################################
+ 
+ building_solar_power_processor:0 "Solar Power Plant"
+ building_solar_power_processor_desc:0 "Make use of execess space to collect energy from nearby star. Produces §G+4§! £energy£ §Y$energy$§!."
